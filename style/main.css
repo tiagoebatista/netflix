@@ -1,0 +1,180 @@
+:root{
+    --vermelho:#E50914;
+    --preta: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+ /*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    position: relative;
+}
+
+header .container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+header .logo{
+    color: var(--vermelho);
+    font-family:'Arial Black';
+    font-weight: bolder;
+    font-size: 60px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 20px;
+    
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(80, 62, 62, 0.5)), url('/img/bio_capa.jpg');
+    background-size:cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:flex-end;
+    text-align: end;
+}
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    ;
+    
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+    text-align-last: end;
+}
+
+.botoes {
+   
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color: wheat;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-top: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+   
+    
+}
+.botao:hover{
+    background-color:white;
+    color: black;
+    
+
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel {
+    margin-top: 5px;
+}
+
+.info {
+    background-color: var(--preta);
+    max-height: 500px;
+    width: auto;
+    position:absolute;
+    top:10%;
+    left:33%;
+    
+    z-index: 1000;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+.info .container {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;  
+    margin-bottom: 30px; 
+    width: 500px;
+    
+
+}
+
+.info .container h3{
+    margin-bottom: 40px;;
+}
+
+.info  .container p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+.info .container h5 {
+    font-size: 20px ;
+    margin-top: 30px;
+
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 3px 25px;
+    
+}
+
+.fechar{
+    float: right;
+    padding: 10px;
+}
+
+.info_close{
+    display: none;
+    transition: 3s ease all;
+}
+
+.fechar:hover{
+    color: yellow;
+}
